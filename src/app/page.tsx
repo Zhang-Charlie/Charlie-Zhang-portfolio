@@ -13,8 +13,9 @@ export default function Home() {
         </h1>
 
         <p className="mx-auto mt-10 max-w-3xl text-base font-medium leading-8 text-[#d2e1ff] sm:text-lg">
-          Driven by learning and a love for technology, I constantly explore new
-          technologies and challenge my limits.
+          Driven by learning and a love for technology, I constantly
+          <br />
+          explore new technologies and challenge my limits.
         </p>
       </div>
     </main>

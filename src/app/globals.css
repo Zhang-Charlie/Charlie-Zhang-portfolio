@@ -2,9 +2,9 @@
 
 :root {
   --background: #0a2f95; /* top gradient color */
-  --foreground: #c5d8f0;
-  --accent: #ec8841;
-  --hero-to: #3e63a3; /* bottom gradient color */
+  --foreground: #3e63a3;
+  --accent: #ee7d2c;
+  --hero-to: #0a2f95; /* bottom gradient color */
 }
 
 @theme inline {
@@ -17,7 +17,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a2f95;
-    --foreground: #cb3838;
+    --foreground: #ffffff;
   }
 }
 
