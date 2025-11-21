@@ -304,13 +304,12 @@ export default function Home() {
           <div className="flex-1 space-y-4 px-1 text-left">
             <h2 className="text-2xl font-bold sm:text-3xl">About Me</h2>
             <p className="text-base leading-relaxed text-slate-800 sm:text-lg">
-              I help bring ideas to life through clean, high-performing web and
-              mobile experiences. Whether you need a fast MVP, a polished
-              product, or help scaling your stack, I focus on reliable, modern
-              solutions using tools like React, React Native, Go, and Node.js.
-              From backend architecture to frontend design, I care about speed,
-              usability, and maintainability, so you get software that not only
-              works, but works well in the real world.
+              I'm a Stage 3 Computer Science with Data Science & Artificial Intelligence student at University College Dublin. 
+              I’m passionate about technology, open-minded, and constantly driven by curiosity. 
+              I placed 3rd in Google’s AI Hackathon, and I’m particularly interested in Artificial Intelligence, 
+              Cloud Computing, Cybersecurity, Software Development, and Mathematics. 
+              I enjoy learning new tools, building projects, and pushing myself to grow in every area.
+
             </p>
           </div>
         </div>
@@ -418,66 +417,66 @@ export default function Home() {
           <h3 className="text-lg font-semibold sm:text-xl">Education</h3>
 
           {/* UCD */}
-          <div className="rounded-2xl border border-[#1f1f1f] bg-[#121212] p-6 shadow-lg">
-            {/* Logo left, text right */}
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
-              {/* Bigger UCD logo on the left */}
-              <div className="shrink-0">
-                <Image
-                  src="/logos/ucd-logo.png"
-                  alt="UCD logo"
-                  width={240}
-                  height={240}
-                  className="h-40 w-auto"
-                />
-              </div>
+<div className="rounded-2xl border border-[#1f1f1f] bg-[#121212] p-6 shadow-lg">
+  {/* top: logo + main text */}
+  <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8">
+    <div className="shrink-0">
+      <Image
+        src="/logos/ucd-logo.png"
+        alt="UCD logo"
+        width={240}
+        height={240}
+        className="h-40 w-auto"
+      />
+    </div>
 
-              {/* Uni name and degree */}
-              <div>
-                <h4 className="text-2xl font-bold text-white">
-                  University College Dublin
-                </h4>
-                <p className="mt-1 text-base text-slate-300">
-                  <strong>
-                    BSc Computer Science with Data Science &amp; AI
-                  </strong>{" "}
-                  (Sep 2023 – May 2027)
-                  <br />
-                  Dublin, Ireland
-                </p>
-              </div>
-            </div>
+    <div>
+      <h4 className="text-2xl font-bold text-white">
+        University College Dublin
+      </h4>
+      <p className="mt-1 text-base text-slate-300">
+        <strong>BSc Computer Science with Data Science &amp; AI</strong>{" "}
+        <span className="text-slate-400">(Sep 2023 – May 2027)</span>
+        <br />
+        <span className="text-slate-300">Dublin, Ireland</span>
+      </p>
+    </div>
+  </div>
 
-            <div className="mt-6 grid gap-6 sm:grid-cols-2">
-              {/* Highlights (pushed more to the right) */}
-              <div className="sm:pl-10">
-                <h5 className="mb-2 text-lg font-semibold text-white">
-                  Highlights
-                </h5>
-                <ul className="space-y-2 text-sm leading-relaxed text-slate-300">
-                  <li>• Class Representative for ~150 students</li>
-                  <li>• Student Rep — Science Taught Programmes Board</li>
-                  <li>• UCD NetSoc Ordinary Committee Member</li>
-                  <li>• Peer Mentor &amp; Access Leader</li>
-                </ul>
-              </div>
+  {/* bottom: highlights + coursework, aligned under the text block */}
+  <div className="mt-6">
+    <div className="grid gap-6 sm:ml-[11rem] sm:grid-cols-2">
+      {/* tweak sm:ml-[11rem] until it lines up perfectly with your heading */}
 
-              {/* Coursework */}
-              <div>
-                <h5 className="mb-2 text-lg font-semibold text-white">
-                  Technical Coursework
-                </h5>
-                <ul className="space-y-2 text-sm leading-relaxed text-slate-300">
-                  <li>• Data Structures &amp; Algorithms</li>
-                  <li>• Operating Systems (C, RISC-V)</li>
-                  <li>• Machine Learning &amp; AI</li>
-                  <li>• Database Systems &amp; SQL</li>
-                  <li>• Computer Networks</li>
-                  <li>• Software Engineering Principles</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      {/* Highlights */}
+      <div>
+        <h5 className="mb-2 text-lg font-semibold text-white">Highlights</h5>
+        <ul className="space-y-2 text-sm leading-relaxed text-slate-300">
+          <li>• Class Representative for ~150 students</li>
+          <li>• Student Rep — Science Taught Programmes Board</li>
+          <li>• UCD NetSoc Ordinary Committee Member</li>
+          <li>• Peer Mentor &amp; Access Leader</li>
+        </ul>
+      </div>
+
+      {/* Technical Coursework */}
+      <div>
+        <h5 className="mb-2 text-lg font-semibold text-white">
+          Technical Coursework
+        </h5>
+        <ul className="space-y-2 text-sm leading-relaxed text-slate-300">
+          <li>• Data Structures &amp; Algorithms</li>
+          <li>• Operating Systems (C, RISC-V)</li>
+          <li>• Machine Learning &amp; AI</li>
+          <li>• Database Systems &amp; SQL</li>
+          <li>• Computer Networks</li>
+          <li>• Software Engineering Principles</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 
           {/* BFEI */}
           <div className="rounded-2xl border border-[#1f1f1f] bg-[#121212] p-6 shadow-lg">
