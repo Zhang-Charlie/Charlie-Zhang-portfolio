@@ -333,6 +333,83 @@ export default function Home() {
   </div>
 </section>
 
+{/* Experience Section */}
+<section className="w-full bg-[#0f0f0f] px-4 py-14 text-slate-100 sm:px-6">
+  <div className="mx-auto max-w-6xl space-y-8">
+    <h3 className="text-lg font-semibold sm:text-xl">Experience</h3>
+
+    <div className="grid gap-6 md:grid-cols-2">
+      {/* UCD Leadership & Involvement */}
+      <div className="rounded-2xl border border-[#1f1f1f] bg-[#121212] p-6 shadow-lg">
+        <h4 className="text-xl font-semibold text-white">
+          University College Dublin
+        </h4>
+        <p className="mt-1 text-sm text-slate-300">
+          Student Leadership &amp; Societies · 2023 – Present
+        </p>
+
+        <ul className="mt-4 space-y-2 text-sm leading-relaxed text-slate-300">
+          <li>• Class Representative for ~150 Computer Science students</li>
+          <li>• Student Representative on the Science Taught Programmes Board</li>
+          <li>• Ordinary Committee Member — UCD NetSoc</li>
+          <li>• Peer Mentor &amp; Access Leader, supporting new and prospective students</li>
+        </ul>
+      </div>
+
+      {/* Formula Student / Technical Experience */}
+      <div className="rounded-2xl border border-[#1f1f1f] bg-[#121212] p-6 shadow-lg">
+        <h4 className="text-xl font-semibold text-white">
+          UCD Formula Student — Powertrain
+        </h4>
+        <p className="mt-1 text-sm text-slate-300">
+          Vehicle Control &amp; Embedded Software · 2024 – Present
+        </p>
+
+        <ul className="mt-4 space-y-2 text-sm leading-relaxed text-slate-300">
+          <li>• Contributing to Vehicle Control Unit (VCU) software in C / C++</li>
+          <li>• Working with sensors, dashboards, and real-hardware testing</li>
+          <li>• Collaborating with a multidisciplinary team on reliability and safety</li>
+        </ul>
+      </div>
+
+      {/* Projects */}
+      <div className="rounded-2xl border border-[#1f1f1f] bg-[#121212] p-6 shadow-lg">
+        <h4 className="text-xl font-semibold text.white">
+          Software &amp; Technical Projects
+        </h4>
+        <p className="mt-1 text-sm text-slate-300">
+          Personal &amp; University Projects
+        </p>
+
+        <ul className="mt-4 space-y-2 text-sm leading-relaxed text-slate-300">
+          <li>• <strong>Orca Website</strong> — HTML &amp; CSS site focusing on layout, accessibility, and ocean conservation content</li>
+          <li>• <strong>HexOust</strong> — Java hex-grid strategy game using OOP and Git collaboration</li>
+          <li>• <strong>PathPilot</strong> — AI-powered student-skills recommender built for the Google AI Student Hackathon</li>
+          <li>• Additional experiments in React, TypeScript, data structures, and algorithm visualisation</li>
+        </ul>
+      </div>
+
+      {/* Work & Volunteering */}
+      <div className="rounded-2xl border border-[#1f1f1f] bg-[#121212] p-6 shadow-lg">
+        <h4 className="text-xl font-semibold text-white">
+          Work &amp; Volunteering
+        </h4>
+        <p className="mt-1 text-sm text-slate-300">
+          Customer-facing &amp; operational roles
+        </p>
+
+        <ul className="mt-4 space-y-2 text-sm leading-relaxed text-slate-300">
+          <li>• Cafe assistant at Ocean Catering &amp; Hospitality Services</li>
+          <li>• Team member at The Coffee Bean, Dublin</li>
+          <li>• Part-time warehouse operative at Uniphar Group and Amazon Ireland</li>
+          <li>• Work experience at St Mary&apos;s Hospital, Phoenix Park</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     </main>
   )
