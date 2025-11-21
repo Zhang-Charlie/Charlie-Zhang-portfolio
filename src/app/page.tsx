@@ -57,6 +57,37 @@ const techStack = [
   },
 ]
 
+const tools = [
+  {
+    name: "Git",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    name: "GitHub",
+    src: "/logos/github.svg",
+  },
+  {
+    name: "VS Code",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+  },
+  {
+    name: "Linux / WSL",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+  },
+  {
+    name: "Anaconda",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg",
+  },
+  {
+    name: "Vercel",
+    src: "/logos/vercel.svg",
+  },
+  {
+    name: "Jupyter Notebook",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg",
+  },
+]
+
 const projects = [
   {
     title: "ScholaFlow",
@@ -156,7 +187,6 @@ const certificates = [
     url: "https://www.codecademy.com/profiles/ZhangCharlie/certificates/a8ab218d5950c29861635cc0bf12fd13",
   },
 ]
-
 
 function GithubIcon({ className = "h-4 w-4" }) {
   return (
@@ -282,6 +312,34 @@ export default function Home() {
 
       {/* tech stack */}
       <TechStackSection />
+
+      {/* tools */}
+      <section className="w-full bg-[#111111] px-4 py-12 text-slate-100 sm:px-6">
+        <div className="mx-auto max-w-6xl space-y-8">
+          <h3 className="text-lg font-semibold sm:text-xl">Tools I Use</h3>
+
+          <div className="grid grid-cols-2 gap-6 text-center sm:grid-cols-3 md:grid-cols-5">
+            {tools.map(({ name, src }) => (
+              <div
+                key={name}
+                className="group flex flex-col items-center gap-2 transition-transform duration-200 hover:-translate-y-1"
+              >
+                <img
+                  src={src}
+                  alt={name}
+                  className="h-10 w-10 object-contain transition-transform duration-200 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
+                  referrerPolicy="no-referrer"
+                />
+                <span className="text-sm font-medium text-gray-200 transition-colors duration-200 group-hover:text-white">
+                  {name}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* projects */}
       <section className="w-full bg-[#0f0f0f] px-4 py-14 text-slate-100 sm:px-6">
@@ -611,17 +669,27 @@ export default function Home() {
         </div>
       </section>
 
-       {/* CERTIFICATES */}
+      {/* CERTIFICATES */}
       <section className="w-full bg-[#0f0f0f] px-4 py-14 text-slate-100">
         <div className="mx-auto max-w-6xl space-y-10">
-          <h3 className="text-xl font-semibold">Certificates</h3>
-{/* <h3 className="text-lg font-semibold sm:text-xl text-center"> */}
+          <h3 className="text-xl font-semibold text-center">Certificates</h3>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-10 text-center ">
-            {certificates.map(c => (
-              <a key={c.title} href={c.url} target="_blank" className="group flex flex-col items-center cursor-pointer">
-                <Image src={c.logo} alt={c.title} width={100} height={100}
-                  className="h-20 w-auto object-contain group-hover:scale-105 transition" />
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-10 text-center">
+            {certificates.map((c) => (
+              <a
+                key={c.title}
+                href={c.url}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex flex-col items-center cursor-pointer"
+              >
+                <Image
+                  src={c.logo}
+                  alt={c.title}
+                  width={100}
+                  height={100}
+                  className="h-20 w-auto object-contain group-hover:scale-105 transition"
+                />
 
                 <p className="mt-3 text-sm font-semibold group-hover:text-[var(--color-accent)] transition">
                   {c.title}
@@ -632,7 +700,6 @@ export default function Home() {
               </a>
             ))}
           </div>
-
         </div>
       </section>
     </main>
