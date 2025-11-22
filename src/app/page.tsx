@@ -17,6 +17,28 @@ type ProjectModalProps = {
   project: Project
   onClose: () => void
 }
+const hexOustHighlights = [
+  "Turn-based hex-grid strategy game built in Java",
+  "Implemented a custom hex coordinate system and board rendering from scratch",
+  "Designed movement, attack logic, and turn-based gameplay using clean OOP principles",
+  "Collaborated in a team of three using Git and GitHub for version control",
+  "Focused on writing readable, modular code and experimenting with game architecture",
+]
+const javaSortingBenchmarkHighlights = [
+  "Benchmarks Bubble Sort, Merge Sort, Quick Sort, and Counting Sort in Java",
+  "Runs experiments across different input sizes and array distributions",
+  "Automatically generates datasets and records precise execution times",
+  "Exports results to CSV for further analysis and reporting",
+  "Produces visual graphs to compare real-world performance with Big-O theory",
+]
+
+const javaDataStructuresHighlights = [
+  "Built a full Java data structures library entirely from scratch",
+  "Implements arrays, linked lists, stacks, queues, heaps, trees, and hash tables",
+  "Includes advanced trees such as AVL, Red-Black, Splay, and Treap",
+  "Uses generics and clean OOP design for reusable, readable APIs",
+  "Ships with a benchmarking driver to compare against Java’s built-in collections",
+]
 
 const techStack = [
   {
@@ -134,13 +156,15 @@ const education = [
   },
 ]
 
+
 const pathPilotHighlights = [
+  "Placed 3rd overall at the Google AI Student Hackathon",
   "Built using React, TypeScript, and Firebase",
   "AI path-generation using custom reasoning logic",
   "Multi-step student questionnaire with dynamic UI",
-  "Created for the Google AI Student Hackathon and placed 3rd overall",
-  "Developed collaboratively in a fast-paced hackathon environment",
+  "Developed collaboratively in a fast-paced hackathon environment by a team of five",
 ]
+
 
 
 
@@ -260,29 +284,36 @@ const projects: Project[] = [
 {
   title: "PathPilot",
   description:
-    "AI-powered student career guidance app built for the Google AI Student Hackathon, earning 3rd place overall. Generates personalised university and career paths using LLM reasoning, weighted scoring, and a multi-step questionnaire.",
-  imageSrc: "/projects/pathpilot_end.jpg",     // main thumbnail
-  videoSrc: "/projects/pathpilot_video.mp4",   // demo video
+    "Placed 3rd overall at the Google AI Student Hackathon with PathPilot, an AI-powered student career guidance app built by a team of five. It generates personalised university and career paths using LLM reasoning, weighted scoring, and a multi-step questionnaire.",
+  imageSrc: "/projects/pathpilot_end.jpg",
 }
 
 ,
+{
+  title: "HexOust",
+  description:
+    "HexOust is a turn-based hex-grid strategy game built in Java with a team of three. We implemented a custom hex coordinate system, movement and attack logic, and rendering from scratch, using clean OOP design and Git collaboration throughout the project.",
+  imageSrc: "/projects/hexoust_pic.png",
+  githubUrl: "https://github.com/Zhang-Charlie/Hexoust",
+  // no liveUrl for now
+},
 
-  {
-    title: "HexOust",
+
+   {
+    title: "Java Sorting Algorithms Benchmark",
     description:
-      "Turn-based hex-grid strategy game built in Java. Implemented custom hex coordinate mapping, movement logic, and rendering. Developed collaboratively using Git and clean OOP structure.",
-    liveUrl: "#",  
-    githubUrl: "https://github.com/Zhang-Charlie/Hexoust",
-    imageSrc: "/projects/hexoust.png",
+      "A Java benchmarking suite that compares the performance of Bubble Sort, Merge Sort, Quick Sort, and Counting Sort across different input sizes and input orderings. Runs timed experiments, exports CSV data, and generates visual graphs so you can see how real-world performance lines up with Big-O time complexity.",
+    imageSrc: "/projects/java-sorting-benchmark.png",
+    githubUrl:
+      "https://github.com/Zhang-Charlie/Java-Sorting-Algorithms-Benchmark",
   },
-
   {
-    title: "Sorting Algorithms Benchmark",
+    title: "Java Data Structures Library",
     description:
-      "Java implementations of Bubble Sort, Merge Sort, Quick Sort, and Counting Sort benchmarked across multiple input sizes. Includes time-complexity analysis and performance graphs.",
-    liveUrl: "#",  
-    githubUrl: "#",                   // add repo once uploaded
-    imageSrc: "/projects/sorting-benchmark.png",
+      "A from-scratch Java data structures library implementing core structures like dynamic arrays, linked lists, stacks, queues, trees, heaps, and hash maps. Focuses on clean OOP design, generics, and readable APIs, with a benchmarking driver to compare custom implementations against Java’s built-in collections.",
+    imageSrc: "/projects/java-data-structures.png",
+    githubUrl:
+      "https://github.com/Zhang-Charlie/Java-Data-Structures-Library",
   },
 
   {
@@ -401,7 +432,6 @@ function ExternalLinkIcon({ className = "h-4 w-4" }) {
 }
 
 function ProjectModal({ project, onClose }: ProjectModalProps) {
-
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
@@ -420,15 +450,15 @@ function ProjectModal({ project, onClose }: ProjectModalProps) {
   return (
     <div
       className={`fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm transition-opacity duration-200 ${
-        open ? 'opacity-100' : 'opacity-0'
+        open ? "opacity-100" : "opacity-0"
       }`}
       onClick={handleClose}
     >
       <div
         className={`relative w-[96%] max-w-5xl max-h-[82vh] flex flex-col rounded-3xl bg-[#111111] px-8 py-6 shadow-[0_0_60px_rgba(0,0,0,0.7)] border border-[#1f1f1f] transform transition-transform duration-200 ${
-          open ? 'scale-100' : 'scale-95'
+          open ? "scale-100" : "scale-95"
         }`}
-        onClick={(e) => e.stopPropagation()}
+        onClick={e => e.stopPropagation()}
       >
         {/* top bar */}
         <div className="flex items-start justify-between gap-4">
@@ -449,84 +479,126 @@ function ProjectModal({ project, onClose }: ProjectModalProps) {
           </button>
         </div>
 
-        {/* subtle divider */}
+        {/* divider */}
         <div className="mt-4 h-px w-full bg-white/5" />
+
         {/* scrollable content */}
-<div className="mt-4 flex-1 overflow-y-auto pr-1 space-y-5">
-  {/* screenshot */}
-  <div className="mx-auto max-w-3xl overflow-hidden rounded-xl border border-[#1f1f1f] bg-[#0a0a0a]">
-    <Image
-      src={project.imageSrc}
-      alt={project.title}
-      width={1200}
-      height={630}
-      className="w-full h-auto max-h-[420px] object-contain"
-    />
-  </div>
+        <div className="mt-4 flex-1 overflow-y-auto pr-1 space-y-5">
 
-  {/* ABOUT SECTION */}
-  <div className="mt-2">
-    <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
-      About this project
-    </h4>
+          {/* screenshot */}
+          <div className="mx-auto max-w-3xl overflow-hidden rounded-xl border border-[#1f1f1f] bg-[#0a0a0a]">
+            <Image
+              src={project.imageSrc}
+              alt={project.title}
+              width={1200}
+              height={630}
+              className="w-full h-auto max-h-[420px] object-contain"
+            />
+          </div>
 
-    {/* main description for all projects */}
-    <p className="mt-2 text-sm leading-relaxed text-slate-300">
-      {project.description}
-    </p>
+          {/* ABOUT SECTION */}
+          <div className="mt-2">
+            <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
+              About this project
+            </h4>
 
-    {/* extra bullet points just for PathPilot */}
-    {project.title === "PathPilot" && (
-      <ul className="mt-4 space-y-2 text-sm text-slate-300 list-disc list-inside">
-        {pathPilotHighlights.map(item => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
-    )}
-  </div>
+            <p className="mt-2 text-sm leading-relaxed text-slate-300">
+              {project.description}
+            </p>
 
-  {/* VIDEO PREVIEW – only for PathPilot */}
-  {project.title === "PathPilot" && (
-    <div className="mt-6">
-      <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
-        Demo video
-      </h4>
+            {/* PathPilot bullets */}
+            {project.title === "PathPilot" && (
+              <ul className="mt-4 space-y-2 text-sm text-slate-300 list-disc list-inside">
+                {pathPilotHighlights.map(item => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            )}
 
-      <video
-        src="/projects/pathpilot_video.mp4"
-        controls
-        className="mt-3 w-full max-h-[420px] rounded-xl border border-[#1f1f1f] object-cover"
-      />
-    </div>
-  )}
+            {/* HexOust bullets */}
+            {project.title === "HexOust" && (
+              <ul className="mt-4 space-y-2 text-sm text-slate-300 list-disc list-inside">
+                {hexOustHighlights.map(item => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            )}
 
-  {/* actions */}
-  <div className="flex flex-wrap gap-3 pt-2">
-    {project.githubUrl && (
-      <a
-        href={project.githubUrl}
-        target="_blank"
-        rel="noreferrer"
-        className="rounded-lg bg-white/10 px-4 py-2 text-sm text-slate-200 hover:bg-white/20 transition"
-      >
-        View GitHub
-      </a>
-    )}
+            {/* Java Sorting Algorithms Benchmark bullets */}
+            {project.title === "Java Sorting Algorithms Benchmark" && (
+              <ul className="mt-4 space-y-2 text-sm text-slate-300 list-disc list-inside">
+                {javaSortingBenchmarkHighlights.map(item => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            )}
 
-    {project.liveUrl && (
-      <a
-        href={project.liveUrl}
-        target="_blank"
-        rel="noreferrer"
-        className="rounded-lg bg-[var(--color-accent)] px-4 py-2 text-sm font-semibold text-black hover:opacity-90 transition"
-      >
-        Visit live project
-      </a>
-    )}
-  </div>
+            {/* Java Data Structures Library bullets */}
+            {project.title === "Java Data Structures Library" && (
+              <ul className="mt-4 space-y-2 text-sm text-slate-300 list-disc list-inside">
+                {javaDataStructuresHighlights.map(item => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            )}
+          </div>
 
-</div>
+          {/* PathPilot video */}
+          {project.title === "PathPilot" && (
+            <div className="mt-6">
+              <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
+                Demo video
+              </h4>
 
+              <video
+                src="/projects/pathpilot_video.mp4"
+                controls
+                className="mt-3 w-full max-h-[420px] rounded-xl border border-[#1f1f1f] object-cover"
+              />
+            </div>
+          )}
+
+          {/* HexOust video */}
+          {project.title === "HexOust" && (
+            <div className="mt-6">
+              <h4 className="text-sm font-semibold uppercase tracking-wide text-slate-400">
+                Demo video
+              </h4>
+
+              <video
+                src="/projects/hexoust_rec.mp4"
+                controls
+                className="mt-3 w-full max-h-[420px] rounded-xl border border-[#1f1f1f] object-cover"
+              />
+            </div>
+          )}
+
+          {/* actions */}
+          <div className="flex flex-wrap gap-3 pt-2">
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-lg bg-white/10 px-4 py-2 text-sm text-slate-200 hover:bg-white/20 transition"
+              >
+                View GitHub
+              </a>
+            )}
+
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-lg bg-[var(--color-accent)] px-4 py-2 text-sm font-semibold text-black hover:opacity-90 transition"
+              >
+                Visit live project
+              </a>
+            )}
+          </div>
+
+        </div>
       </div>
     </div>
   )
