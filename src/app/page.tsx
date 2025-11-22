@@ -1,3 +1,4 @@
+import { TopBar } from "@/components/layout/top-bar"
 import { AboutSection } from "@/components/sections/about-section"
 import { CertificatesSection } from "@/components/sections/certificates-section"
 import { ContactSection } from "@/components/sections/contact-section"
@@ -9,15 +10,21 @@ import { ToolsSection } from "@/components/sections/tools-section"
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
-      <HeroSection />
-      <AboutSection />
-      <TechStackSection />
-      <ToolsSection />
-      <ProjectsSection />
-      <ExperienceSection />
-      <CertificatesSection />
-      <ContactSection />
-    </main>
+    <>
+      <TopBar />
+      <main className="flex flex-col">
+        <HeroSection />
+        <AboutSection />
+        <TechStackSection />
+        <section id="education" className="sr-only">
+          Education
+        </section>
+        <ToolsSection />
+        <ProjectsSection />
+        <ExperienceSection />
+        <CertificatesSection />
+        <ContactSection />
+      </main>
+    </>
   )
 }

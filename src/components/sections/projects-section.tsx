@@ -74,7 +74,7 @@ export function ProjectsSection() {
   const moreProjects = projects.slice(3)
 
   return (
-    <section className="w-full bg-[#0f0f0f] px-4 py-14 text-slate-100 sm:px-6">
+    <section id="projects" className="w-full bg-[#0f0f0f] px-4 py-14 text-slate-100 sm:px-6">
       <div className="mx-auto max-w-6xl space-y-8">
         <h3 className="text-lg font-semibold sm:text-xl">Recent projects</h3>
 

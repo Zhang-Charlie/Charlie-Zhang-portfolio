@@ -2,7 +2,10 @@ import Image from "next/image"
 
 export function AboutSection() {
   return (
-    <section className="w-full bg-white px-4 py-14 text-slate-900 sm:px-6 sm:py-16">
+    <section
+      id="about"
+      className="w-full bg-white px-4 py-14 text-slate-900 sm:px-6 sm:py-16"
+    >
       <div className="mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-start md:gap-10">
         <div className="mx-auto w-fit md:mx-0">
           <Image
