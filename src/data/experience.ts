@@ -12,7 +12,7 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "SU Class Representative",
+    title: "Students’ Union Class Representative",
     subtitle: "UCD Students' Union - Sep 2025 - Present",
     logo: "/logos/su.png",
     side: "right",
@@ -42,7 +42,7 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Artificial Intelligence Content Trainer",
+    title: "Artificial Intelligence Trainer",
     subtitle: "Outlier - Apr 2025 - Present - Remote",
     logo: "/logos/outlier.png",
     side: "left",
@@ -74,8 +74,8 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Sales and Warehouse Colleague",
-    subtitle: "Currys plc - Jul 2023 - Aug 2024 -  Full-time & Part-time",
+    title: "Sales Colleague",
+    subtitle: "Currys PC World - Jul 2023 - Aug 2024 -  Full-time & Part-time",
     logo: "/logos/currys.png",
     side: "right",
     points: [

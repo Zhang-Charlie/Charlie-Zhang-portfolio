@@ -7,7 +7,7 @@ export const education: EducationItem[] = [
     width: 240,
     height: 240,
     degree: "BSc Computer Science with Data Science & AI",
-    dates: "Sep 2023 - May 2027",
+    dates: "Expected May 2027",
     location: "Dublin, Ireland",
     highlights: [
       "Science Taught Programmes Board - Computer Science Representative for ~1,200+ students",
@@ -38,7 +38,7 @@ export const education: EducationItem[] = [
     width: 240,
     height: 240,
     degree: "QQI Level 5 Certificate in Software Development (5M0529)",
-    dates: "Sep 2022 - May 2023",
+    dates: "May 2023",
     location: "Dublin, Ireland",
     grade: "Distinction (Top Grade)",
     highlights: [
