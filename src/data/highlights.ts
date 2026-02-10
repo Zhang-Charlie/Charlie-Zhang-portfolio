@@ -31,11 +31,9 @@ export const javaSortingBenchmarkHighlights = [
 ]
 
 export const javaDataStructuresHighlights = [
-  "Built a full Java data structures library entirely from scratch",
-  "Implements arrays, linked lists, stacks, queues, heaps, trees, and hash tables",
-  "Includes advanced trees such as AVL, Red-Black, Splay, and Treap",
-  "Uses generics and clean OOP design for reusable, readable APIs",
-  "Ships with a benchmarking driver to compare against Java's built-in collections",
+  "Implemented a Treap from scratch, using rotations to maintain both BST ordering and heap priority properties",
+  "Developed TreapSort and benchmarked it against QuickSort, MergeSort, TimSort, and PriorityQueue-based sorting on varied input distributions",
+  "Compared empirical runtime performance against theoretical time complexity under different input distributions",
 ]
 
 export const usedCarPriceAnalysisHighlights = [

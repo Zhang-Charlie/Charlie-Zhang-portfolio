@@ -25,6 +25,14 @@ export const projects: Project[] = [
     highlights: pathPilotHighlights,
   },
   {
+    title: "Treap Data Structure & Sorting Algorithm Performance Analysis",
+    description:
+      "Java project implementing a Treap from first principles and using it to build TreapSort, with JUnit-backed benchmarks comparing its performance against QuickSort, MergeSort, TimSort, and heap-based sorting across varied input distributions, analyzing empirical results against theoretical time complexity.",
+    imageSrc: "/projects/java-data-structures.png",
+    githubUrl: "https://github.com/Zhang-Charlie/Java-Data-Structures-Library",
+    highlights: javaDataStructuresHighlights,
+  },
+  {
     title: "HexOust",
     description:
       "HexOust is a turn-based hex-grid strategy game built in Java with a team of three. We implemented a custom hex coordinate system, movement and attack logic, and rendering from scratch, using clean OOP design and Git collaboration throughout the project.",
@@ -41,14 +49,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Zhang-Charlie/Java-Sorting-Algorithms-Benchmark",
     highlights: javaSortingBenchmarkHighlights,
   },
-  {
-    title: "Java Data Structures Library",
-    description:
-      "A from-scratch Java data structures library implementing core structures like dynamic arrays, linked lists, stacks, queues, trees, heaps, and hash maps. Focuses on clean OOP design, generics, and readable APIs, with a benchmarking driver to compare custom implementations against Java's built-in collections.",
-    imageSrc: "/projects/java-data-structures.png",
-    githubUrl: "https://github.com/Zhang-Charlie/Java-Data-Structures-Library",
-    highlights: javaDataStructuresHighlights,
-  },
+
   {
     title: "Used Car Price Analysis & Prediction",
     description:
