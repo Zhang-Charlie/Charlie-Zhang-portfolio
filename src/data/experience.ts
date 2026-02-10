@@ -2,6 +2,16 @@ import { ExperienceItem } from "@/types"
 
 export const experience: ExperienceItem[] = [
   {
+    title: "Microsoft 365 Migration Steering Committee — Student Representative",
+    subtitle: "UCD - Jan 2025 - Present",
+    logo: "/logos/microsoft.png",
+    side: "right",
+    points: [
+      "Chosen to represent the student body of about 41,000 students at University College Dublin in discussions around the university-wide Microsoft 365 migration affecting learning and campus systems",
+      "Worked with senior university leaders and other stakeholders to share the student perspective on rollout plans, communications, and maintaining smooth services during the transition"
+    ],
+  },
+  {
     title: "Science Taught Programmes Board - Computer Science Representative",
     subtitle: "UCD Students' Union - Sep 2025 - Present",
     logo: "/logos/su.png",
@@ -42,7 +52,7 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    title: "Artificial Intelligence Trainer",
+    title: "AI Model Evaluation Analyst",
     subtitle: "Outlier - Apr 2025 - Present - Remote",
     logo: "/logos/outlier.png",
     side: "left",
