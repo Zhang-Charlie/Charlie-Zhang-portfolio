@@ -10,6 +10,7 @@ export const education: EducationItem[] = [
     dates: "Expected May 2027",
     location: "Dublin, Ireland",
     highlights: [
+      "Microsoft 365 Migration Steering Committee — Student Representative representing ~41,000 students",
       "Science Taught Programmes Board - Computer Science Representative for ~1,200+ students",
       "Class Representative for ~150 students (Stage 2)",
       "SU Class Representative for ~150 students (Stage 3)",
