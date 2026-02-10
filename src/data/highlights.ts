@@ -1,3 +1,11 @@
+export const jwtauthHighlights = [
+  "Stateless JWT authentication and authorization service built with Spring Boot",
+  "Implements secure login, token generation, and role-based access control",
+  "Uses Spring Security and BCrypt for password hashing and endpoint protection",
+  "Exposes protected REST APIs with clear security configuration",
+  "Dockerized for consistent local setup and deployment",
+]
+
 export const pathPilotHighlights = [
   "Placed 3rd overall at the Google AI Student Hackathon",
   "Built using React, TypeScript, and Firebase",

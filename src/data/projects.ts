@@ -1,5 +1,6 @@
 import { Project } from "@/types"
 import {
+  jwtauthHighlights,
   hexOustHighlights,
   javaDataStructuresHighlights,
   javaSortingBenchmarkHighlights,
@@ -8,6 +9,13 @@ import {
 } from "./highlights"
 
 export const projects: Project[] = [
+  {
+    title: "JWT Authentication & Authorization Service (Spring Boot)",
+    description:
+      "Stateless authentication API built with Spring Boot and Spring Security, featuring JWT-based login, role-based access control, BCrypt password hashing, and protected REST endpoints, packaged with Docker for consistent deployment.",
+    imageSrc: "/projects/authimg.jpeg",
+    highlights: jwtauthHighlights,
+  },
   {
     title: "PathPilot",
     description:
