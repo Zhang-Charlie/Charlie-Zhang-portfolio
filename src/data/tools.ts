@@ -12,5 +12,6 @@ export const tools: LogoItem[] = [
   { name: "Docker", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
   { name: "Kubernetes", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
   { name: "Postman", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
-  { name: "JUnit", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" }
+  { name: "JUnit", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" },
+  { name: "IntelliJ IDEA", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" }
 ]
