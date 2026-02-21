@@ -32,36 +32,37 @@ function ProjectCard({ project, onSelect }: ProjectCardProps) {
         </div>
       </div>
 
-      <div className="mt-4 flex items-center gap-3">
-        <h4 className="text-lg font-semibold text-white">{project.title}</h4>
-        <div className="flex items-center gap-2 text-slate-300">
-          {project.githubUrl && (
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noreferrer"
-              onClick={event => event.stopPropagation()}
-              className="rounded p-1 transition-colors duration-150 hover:bg-white/10"
-            >
-              <GithubIcon className="h-4 w-4" />
-            </a>
-          )}
+      <div className="mx-auto mt-4 w-full max-w-[92%]">
+        <div className="flex items-center gap-3">
+          <h4 className="text-lg font-semibold text-white">{project.title}</h4>
+          <div className="ml-auto flex items-center gap-2 text-slate-300">
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noreferrer"
+                onClick={event => event.stopPropagation()}
+                className="rounded p-1 transition-colors duration-150 hover:bg-white/10"
+              >
+                <GithubIcon className="h-4 w-4" />
+              </a>
+            )}
 
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noreferrer"
-              onClick={event => event.stopPropagation()}
-              className="rounded p-1 transition-colors duration-150 hover:bg-white/10"
-            >
-              <ExternalLinkIcon className="h-4 w-4" />
-            </a>
-          )}
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                onClick={event => event.stopPropagation()}
+                className="rounded p-1 transition-colors duration-150 hover:bg-white/10"
+              >
+                <ExternalLinkIcon className="h-4 w-4" />
+              </a>
+            )}
+          </div>
         </div>
+        <p className="mt-2 text-sm text-slate-300">{project.description}</p>
       </div>
-
-      <p className="mt-2 text-sm text-slate-300">{project.description}</p>
     </div>
   )
 }
