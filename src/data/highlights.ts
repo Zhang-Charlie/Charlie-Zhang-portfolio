@@ -6,6 +6,14 @@ export const jwtauthHighlights = [
   "Dockerized for consistent local setup and deployment",
 ]
 
+export const llmSecurityGatewayHighlights = [
+  "Built a production-style AI security gateway that sits in front of a live LLM",
+  "Evaluates prompts before they reach the model using rule-based detection and ML classifiers",
+  "Flags prompt injection, jailbreak attempts, and data exfiltration",
+  "Designed as a layered FastAPI service with Docker containerization",
+  "Integrated with a local Ollama backend to simulate real-world deployment",
+]
+
 export const pathPilotHighlights = [
   "Placed 3rd overall at the Google AI Student Hackathon",
   "Built using React, TypeScript, and Firebase",

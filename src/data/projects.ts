@@ -1,6 +1,7 @@
 import { Project } from "@/types"
 import {
   jwtauthHighlights,
+  llmSecurityGatewayHighlights,
   hexOustHighlights,
   javaDataStructuresHighlights,
   javaSortingBenchmarkHighlights,
@@ -10,11 +11,19 @@ import {
 
 export const projects: Project[] = [
   {
-    title: "JWT Authentication & Authorization Service (Spring Boot)",
+    title: "JWT Authentication & Authorization Service",
     description:
       "Stateless authentication API built with Spring Boot and Spring Security, featuring JWT-based login, role-based access control, BCrypt password hashing, and protected REST endpoints, packaged with Docker for consistent deployment.",
-    imageSrc: "/projects/authimg.jpeg",
+    imageSrc: "/projects/JWTAuthentication&AuthorizationService.png", 
     highlights: jwtauthHighlights,
+  },
+  {
+  title: "LLM Security Gateway",
+  description:
+    "AI security proxy built with FastAPI that evaluates prompts before they reach a live LLM, combining rule-based checks and ML classifiers to detect prompt injection and jailbreak attempts, containerised with Docker and integrated with a local Ollama backend.",
+  imageSrc: "/projects/secLLMDiagram.png",
+  githubUrl: "https://github.com/Zhang-Charlie/LLM-Security-Gateway",
+  highlights: llmSecurityGatewayHighlights,
   },
   {
     title: "PathPilot",
