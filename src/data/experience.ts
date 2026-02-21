@@ -4,7 +4,7 @@ export const experience: ExperienceItem[] = [
   {
     title: "Microsoft 365 Migration Steering Committee — Student Representative",
     subtitle: "UCD - Jan 2025 - Present",
-    logo: "/logos/microsoft.png",
+    logo: "/logos/ucd-logo.png",
     side: "right",
     points: [
       "Chosen to represent the student body of about 41,000 students at University College Dublin in discussions around the university-wide Microsoft 365 migration affecting learning and campus systems",
