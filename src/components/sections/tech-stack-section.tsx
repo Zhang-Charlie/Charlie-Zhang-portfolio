@@ -1,36 +1,36 @@
-import Image from "next/image"
-
 import { techStack } from "@/data/tech-stack"
 
-export function TechStackSection() {
+export default function SkillsSection() {
   return (
     <section
-      id="tech-stack"
-      className="w-full bg-[#111111] px-4 pt-4 pb-12 text-slate-100 sm:px-6 sm:pt-6"
+      id="skills"
+      className="w-full bg-neutral-900 px-4 py-12 text-neutral-200 sm:px-6 sm:py-14"
     >
-      <div className="mx-auto max-w-6xl space-y-8">
-        <h3 className="text-lg font-semibold sm:text-xl">Tech Stack</h3>
-        <div className="grid grid-cols-2 gap-6 text-center sm:grid-cols-3 md:grid-cols-5">
-          {techStack.map(({ name, src, className }) => (
+      <div className="mx-auto max-w-6xl space-y-6">
+        <h3 className="text-lg font-semibold text-neutral-100 sm:text-xl">
+          Skills
+        </h3>
+
+        <div className="border-b border-neutral-800">
+          {techStack.map(({ label, skills }) => (
             <div
-              key={name}
-              className="group flex flex-col items-center gap-2 transition-transform duration-200 hover:-translate-y-1"
+              key={label}
+              className="grid gap-2 border-t border-neutral-800 py-4 sm:grid-cols-[13rem_minmax(0,1fr)] sm:gap-8"
             >
-              <Image
-                src={src}
-                alt={name}
-                className={`object-contain transition-transform duration-200 group-hover:scale-105 ${
-                  className ?? "h-10 w-10"
-                }`}
-                loading="lazy"
-                decoding="async"
-                referrerPolicy="no-referrer"
-                width={10}
-                height={10}
-              />
-              <span className="text-sm font-medium text-gray-200 transition-colors duration-200 group-hover:text-white">
-                {name}
-              </span>
+              <h4 className="text-sm font-medium leading-6 text-neutral-400">
+                {label}
+              </h4>
+
+              <ul className="flex flex-wrap items-baseline text-sm leading-7 text-neutral-200 sm:text-[0.95rem]">
+                {skills.map(skill => (
+                  <li
+                    key={skill}
+                    className="after:mx-2.5 after:text-neutral-600 after:content-['·'] last:after:content-none"
+                  >
+                    {skill}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

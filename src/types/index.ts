@@ -24,10 +24,9 @@ export interface Certificate {
   url: string
 }
 
-export interface LogoItem {
-  name: string
-  src: string
-  className?: string
+export interface SkillCategory {
+  label: string
+  skills: string[]
 }
 
 export interface EducationItem {

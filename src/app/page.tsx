@@ -6,8 +6,7 @@ import { EducationSection } from "@/components/sections/education-section"
 import { ExperienceSection } from "@/components/sections/experience-section"
 import { HeroSection } from "@/components/sections/hero-section"
 import { ProjectsSection } from "@/components/sections/projects-section"
-import { TechStackSection } from "@/components/sections/tech-stack-section"
-import { ToolsSection } from "@/components/sections/tools-section"
+import SkillsSection from "@/components/sections/tech-stack-section"
 
 export default function Home() {
   return (
@@ -16,8 +15,7 @@ export default function Home() {
       <main className="flex flex-col">
         <HeroSection />
         <AboutSection />
-        <TechStackSection />
-        <ToolsSection />
+        <SkillsSection />
         <EducationSection />
         <ProjectsSection />
         <ExperienceSection />
