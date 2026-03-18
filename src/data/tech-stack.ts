@@ -23,6 +23,6 @@ export const techStack: SkillCategory[] = [
   },
   {
     label: "Tooling & Foundations",
-    skills: ["Maven", "JUnit", "System Design (basic)", "C", "x86 Assembly", "Scheme"],
+    skills: ["Maven", "JUnit", "Git", "System Design (basic)", "C", "x86 Assembly", "Scheme"],
   },
 ]
