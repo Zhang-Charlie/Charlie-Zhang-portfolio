@@ -18,7 +18,6 @@ export const education: EducationItem[] = [
       "Peer Mentor",
       "Access Leader",
       "Career Mentoring Programme",
-      "UCD Formula Student - Powertrain Department",
     ],
     coursework: [
       "Algorithms & Data Structures",
