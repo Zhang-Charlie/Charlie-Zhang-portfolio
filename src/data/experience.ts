@@ -5,7 +5,7 @@ export const experience: ExperienceItem[] = [
     title: "Microsoft 365 Migration Steering Committee — Student Representative",
     subtitle: "UCD - Jan 2025 - Present",
     logo: "/logos/ucd-logo.png",
-    side: "right",
+    side: "left",
     points: [
       "Chosen to represent the student body of about 41,000 students at University College Dublin in discussions around the university-wide Microsoft 365 migration affecting learning and campus systems",
       "Worked with senior university leaders and other stakeholders to share the student perspective on rollout plans, communications, and maintaining smooth services during the transition"
@@ -15,7 +15,7 @@ export const experience: ExperienceItem[] = [
     title: "Science Taught Programmes Board - Computer Science Representative",
     subtitle: "UCD Students' Union - Sep 2025 - Present",
     logo: "/logos/su.png",
-    side: "left",
+    side: "right",
     points: [
       "Represent the School of Computer Science on the Science Taught Programmes Board for 1,200+ students",
       "Review proposed changes to curriculum structure, assessment weightings, and module offerings"
@@ -25,21 +25,10 @@ export const experience: ExperienceItem[] = [
     title: "Students’ Union Class Representative",
     subtitle: "UCD Students' Union - Sep 2025 - Present",
     logo: "/logos/su.png",
-    side: "right",
+    side: "left",
     points: [
       "Collaborate with faculty and the Students' Union on academic policy and assessment improvements",
       "Support communication between Stage 3 students, the School of Computer Science, and UCDSU",
-    ],
-  },
-  {
-    title: "Powertrain Software Engineer (VCU)",
-    subtitle: "UCD Formula Student - Sep 2025 - Present",
-    logo: "/logos/formula.png",
-    side: "left",
-    points: [
-      "Develop embedded C and C++ software for the Vehicle Control Unit (VCU)",
-      "Implement sensor integration, dashboard logic, and safety behaviour for an electric race car",
-      "Perform real-hardware debugging and reliability improvements on the powertrain system",
     ],
   },
   {
