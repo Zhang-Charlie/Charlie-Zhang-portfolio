@@ -17,7 +17,6 @@ export const education: EducationItem[] = [
       "UCD NetSoc Ordinary Committee Member",
       "Peer Mentor",
       "Access Leader",
-      "Career Mentoring Programme",
     ],
     coursework: [
       "Algorithms & Data Structures",
