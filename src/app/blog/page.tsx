@@ -9,8 +9,8 @@ const stixTwoText = STIX_Two_Text({
 
 const posts = [
   {
-    title: "Learning in Public",
-    href: "#learning-in-public",
+    title: "Google Summer of Code with JBoss",
+    href: "/gsoc",
   },
   {
     title: "Building Useful Software",
@@ -49,8 +49,32 @@ export default function BlogPage() {
 
         <p className="my-5">
           I&apos;m a Computer Science with Data Science &amp; AI student at
-          University College Dublin, currently an intern at Area22 and a Google
-          Summer of Code 2026 contributor with JBoss.
+          University College Dublin, currently a Software Engineering Intern at{" "}
+          <a
+            className="underline decoration-[#737373] decoration-1 underline-offset-[2.5px] transition-colors hover:decoration-[#a1a1a1]"
+            href="https://www.linkedin.com/company/area22/?originalSubdomain=ie"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Area22
+          </a>{" "}
+          and a{" "}
+          <a
+            className="underline decoration-[#737373] decoration-1 underline-offset-[2.5px] transition-colors hover:decoration-[#a1a1a1]"
+            href="/gsoc"
+          >
+            Google Summer of Code 2026 contributor
+          </a>
+          {" "}with{" "}
+          <a
+            className="underline decoration-[#737373] decoration-1 underline-offset-[2.5px] transition-colors hover:decoration-[#a1a1a1]"
+            href="https://www.redhat.com/en/technologies/jboss-middleware/application-platform"
+            rel="noreferrer"
+            target="_blank"
+          >
+            JBoss
+          </a>
+          .
         </p>
 
         <p className="my-5">
