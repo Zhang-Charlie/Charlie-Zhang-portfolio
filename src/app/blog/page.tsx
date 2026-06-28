@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { STIX_Two_Text } from "next/font/google"
 
 const stixTwoText = STIX_Two_Text({
@@ -13,24 +14,8 @@ const posts = [
     href: "/gsoc",
   },
   {
-    title: "Building Useful Software",
-    href: "#building-useful-software",
-  },
-  {
-    title: "Notes on Computer Science",
-    href: "#notes-on-computer-science",
-  },
-  {
-    title: "What I'm Working On",
-    href: "#what-im-working-on",
-  },
-  {
-    title: "Projects and Experiments",
-    href: "#projects-and-experiments",
-  },
-  {
-    title: "Understanding AI",
-    href: "#understanding-ai",
+    title: "Building My Own Infrastructure: Home Lab & Networking",
+    href: "/home-lab-networking",
   },
 ]
 
@@ -107,33 +92,38 @@ export default function BlogPage() {
           ))}
         </ul>
 
-        <p className="my-5">
-          You can read my writing, view my{" "}
-          <a
-            className="underline decoration-[#737373] underline-offset-[2.5px] hover:decoration-[#a1a1a1]"
-            href="https://github.com/Zhang-Charlie"
-            rel="noreferrer"
-            target="_blank"
-          >
-            code
-          </a>
-          , or{" "}
+        <p className="mb-2 mt-5">
+          This is where I share my work, progress, and what I&apos;m learning
+          along the way.
+        </p>
+
+        <p className="mb-5 mt-2">
+          You can{" "}
           <a
             className="underline decoration-[#737373] underline-offset-[2.5px] hover:decoration-[#a1a1a1]"
             href="https://www.linkedin.com/in/zhang-charlie/"
             rel="noreferrer"
             target="_blank"
           >
-            follow me online
+            connect with me online
           </a>
-          .{" "}
+          ,{" "}
+          <Link
+            className="underline decoration-[#737373] underline-offset-[2.5px] hover:decoration-[#a1a1a1]"
+            href="/#projects"
+          >
+            explore my projects
+          </Link>
+          , or{" "}
           <a
             className="underline decoration-[#737373] underline-offset-[2.5px] hover:decoration-[#a1a1a1]"
-            href="mailto:charliezhangbusiness@gmail.com"
+            href="https://github.com/Zhang-Charlie"
+            rel="noreferrer"
+            target="_blank"
           >
-            Reach out
-          </a>{" "}
-          if you&apos;d like to chat, share an idea, or build something together.
+            follow what I&apos;m building
+          </a>
+          .
         </p>
       </div>
     </main>

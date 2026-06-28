@@ -70,14 +70,6 @@ export default function GsocPage() {
         </p>
 
         <p className="my-5">
-          GSoC felt like a natural next step because I had already started
-          learning through open source. Contributing before the program helped
-          me understand how much there is to learn from real reviews, existing
-          code, and maintainers who care about the long-term health of a
-          project.
-        </p>
-
-        <p className="my-5">
           I wanted to see how large enterprise codebases work in practice: how
           they are structured, maintained, and improved without breaking the
           systems people rely on.
@@ -90,26 +82,77 @@ export default function GsocPage() {
         </p>
 
         <h2 className="mb-2 mt-12 text-xl font-medium text-[#f2f2f2]">
-          2. Why JBoss / WildFly?
+          2. How I got into GSoC
+        </h2>
+
+        <p className="my-5">
+          I first found my way into GSoC through open source. Before applying,
+          I had already been contributing to public projects such as A2A. I
+          wanted to gain more experience with real codebases and learn how
+          development works outside of university assignments.
+        </p>
+
+        <p className="my-5">
+          After looking through the GSoC organizations and project ideas, I
+          thought JBoss was the best fit for me. It matched my interest in Java,
+          backend engineering, security, and cloud infrastructure. The fact that
+          it is part of the wider Red Hat and IBM ecosystem made it even more
+          interesting.
+        </p>
+
+        <p className="my-5">
+          I knew GSoC would be competitive, so I spent time researching how to
+          improve my chances. One piece of advice that always came up again and
+          again was to start contributing before the application period.
+        </p>
+
+        <p className="my-5">
+          That is what I did. I started contributing to JBoss-related projects
+          and learning how the community worked. Those early contributions
+          helped me understand the codebase, get used to reviews, and see where
+          I could make a useful contribution.
+        </p>
+
+        <p className="my-5">
+          By the time I applied, GSoC did not feel like a random opportunity
+          anymore. It felt like the next step in work I had already started.
+        </p>
+
+        <h2 className="mb-2 mt-12 text-xl font-medium text-[#f2f2f2]">
+          3. Why JBoss / WildFly?
         </h2>
 
         <p className="my-5">
           I was drawn to JBoss and WildFly because they sit in a part of
-          enterprise software that is both mature and important. They power
-          systems used by real teams to run serious applications, which makes
-          contributing feel more meaningful to me.
+          enterprise software that is mature and important. These projects are
+          used to run real applications, so contributing to them felt more
+          meaningful than working on something purely experimental.
         </p>
 
         <p className="my-5">
-          Working in this ecosystem gives me a chance to learn how enterprise
-          Java projects are designed, tested, maintained, and led over time. I
-          wanted to understand what it takes to contribute to software where
-          reliability, stability, compatibility, and long-term maintainability
-          really matter.
+          WildFly also matched the kind of engineering I want to get better at.
+          I am interested in backend systems, security, Java, and cloud
+          infrastructure. Working in this ecosystem gives me a chance to see how
+          those areas come together inside a production-grade application
+          server.
+        </p>
+
+        <p className="my-5">
+          I also wanted to learn how large enterprise Java projects are designed
+          and maintained over time. In projects like WildFly and Elytron, code
+          quality is not just about making something work once. It also has to
+          be reliable, tested, compatible, and maintainable for the long term.
+        </p>
+
+        <p className="my-5">
+          That was a big reason why JBoss appealed to me. It gave me the chance
+          to contribute to a serious open-source community while learning from
+          experienced maintainers and working on software that has real-world
+          impact.
         </p>
 
         <h2 className="mb-2 mt-12 text-xl font-medium text-[#f2f2f2]">
-          3. Working in the open
+          4. Working in the open
         </h2>
 
         <p className="my-5">
@@ -126,7 +169,7 @@ export default function GsocPage() {
         </p>
 
         <h2 className="mb-2 mt-12 text-xl font-medium text-[#f2f2f2]">
-          4. What I&apos;m hoping to learn
+          5. What I&apos;m hoping to learn
         </h2>
 
         <p className="my-5">
@@ -142,7 +185,7 @@ export default function GsocPage() {
         </p>
 
         <h2 className="mb-2 mt-12 text-xl font-medium text-[#f2f2f2]">
-          5. Notes along the way
+          6. Notes along the way
         </h2>
 
         <p className="my-5">
