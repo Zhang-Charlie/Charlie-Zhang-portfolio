@@ -10,12 +10,28 @@ const stixTwoText = STIX_Two_Text({
 
 const posts = [
   {
-    title: "Google Summer of Code with JBoss",
+    title: "Google Summer of Code 2026 with JBoss",
     href: "/gsoc",
   },
   {
-    title: "Building My Own Infrastructure: Home Lab & Networking",
-    href: "/home-lab-networking",
+    title: "Building Useful Software",
+    href: "#building-useful-software",
+  },
+  {
+    title: "Notes on Computer Science",
+    href: "#notes-on-computer-science",
+  },
+  {
+    title: "What I'm Working On",
+    href: "#what-im-working-on",
+  },
+  {
+    title: "Projects and Experiments",
+    href: "#projects-and-experiments",
+  },
+  {
+    title: "Understanding AI",
+    href: "#understanding-ai",
   },
 ]
 
