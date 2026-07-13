@@ -12,6 +12,7 @@ export interface ExperienceItem {
   title: string
   subtitle: string
   logo: string
+  category: "technical" | "school" | "other"
   side: "left" | "right"
   points: string[]
 }
@@ -22,6 +23,7 @@ export interface Certificate {
   date: string
   logo: string
   url: string
+  category: "featured" | "additional"
 }
 
 export interface SkillCategory {

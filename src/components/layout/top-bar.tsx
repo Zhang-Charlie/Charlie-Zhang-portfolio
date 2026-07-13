@@ -1,10 +1,10 @@
 const navItems = [
   { label: "ABOUT", href: "#about" },
-  { label: "BLOG", href: "/blog" },
-  { label: "SKILLS", href: "#skills" },
-  { label: "EDUCATION", href: "#education" },
   { label: "EXPERIENCE", href: "#experience" },
   { label: "PROJECTS", href: "#projects" },
+  { label: "SKILLS", href: "#skills" },
+  { label: "EDUCATION", href: "#education" },
+  { label: "BLOG", href: "/blog" },
   { label: "CONTACT", href: "#contact" },
 ]
 
