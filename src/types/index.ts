@@ -23,6 +23,7 @@ export interface Certificate {
   date: string
   logo: string
   url: string
+  category: "featured" | "additional"
 }
 
 export interface SkillCategory {
