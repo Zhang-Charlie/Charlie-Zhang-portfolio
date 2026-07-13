@@ -15,10 +15,10 @@ export default function Home() {
       <main className="flex flex-col">
         <HeroSection />
         <AboutSection />
+        <ExperienceSection />
+        <ProjectsSection />
         <SkillsSection />
         <EducationSection />
-        <ProjectsSection />
-        <ExperienceSection />
         <CertificatesSection />
         <ContactSection />
       </main>
