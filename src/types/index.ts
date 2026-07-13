@@ -12,6 +12,7 @@ export interface ExperienceItem {
   title: string
   subtitle: string
   logo: string
+  category: "technical" | "school" | "other"
   side: "left" | "right"
   points: string[]
 }
